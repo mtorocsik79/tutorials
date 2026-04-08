@@ -1,0 +1,300 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+background: #fff;	
+margin:0 auto;
+padding: 0 20px;
+font: Arial, sans-serif;
+}
+
+-----video pages begins-------
+
+.ui-bar-c{
+border:0px solid #b3b3b3;
+background:#fff;color:#3e3e3e;font-weight:bold;
+background:#fff;
+}
+
+.ui-bar-c .ui-link{
+color:#2489ce;font-weight:bold;
+}
+
+.ui-bar-c,.ui-bar-c input,.ui-bar-c select,.ui-bar-c textarea,.ui-bar-c button{
+font-family:Helvetica,Arial,sans-serif;
+}
+
+.ui-body-c{
+	border:0px solid #b3b3b3;
+	color:#333;
+}
+
+.ui-body-c,.ui-body-c input,.ui-body-c select,.ui-body-c textarea,.ui-body-c button{
+font-family:Helvetica,Arial,sans-serif;
+}
+
+.ui-mobile [data-role=page],.ui-mobile [data-role=dialog],.ui-page{
+top:0;
+left:0;
+width:100%;
+min-height:100%;
+position:absolute;
+display:none;border:0;
+}
+
+.ui-mobile .ui-page-active{
+display:block;overflow:visible;
+}
+
+    .ui-grid-a {
+	background: #ddd;
+	text-align: center;
+	width: 1020px;
+	height:475px;
+	-moz-border-radius: 10px;
+border-radius: 10px;
+border-top-right-radius: 0px;
+-moz-border-top-right-radius: 0px;
+}
+
+    .ui-grid-a .ui-block-a a {
+	padding-top: 8px;
+	padding-bottom: 8px;
+	font-weight:bold;
+	font-size:14px;
+	text-decoration:none;
+	padding-left: 6px;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+    .ui-block-a {
+	background: #ddd;
+}
+
+    .ui-grid-a .ui-block-a div {
+	text-align: left;
+	background: #ddd;
+	display: block;
+}
+.ui-block-a {
+	text-align: left;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	display: block;
+	height:405px;
+}
+
+.ui-grid-a,.ui-grid-b{
+	overflow:hidden;
+}
+
+.ui-block-a,.ui-block-b{
+	margin:0;
+	padding:0;
+	border:0;
+	float:left;
+	min-height:1px
+}
+	
+.ui-block-a {
+	width:265px;
+	background:#aaa;
+		margin-left:10px;
+}
+.ui-block-b {
+	width:720px;
+	margin-right:10px;
+	margin-left:12px;
+}
+.logo {
+	margin:0px 0px 0px 0px
+}
+
+.videopage {
+	text-align: center;
+	font-weight:bold;color:#fff;
+background:#fff;
+}
+
+
+------- Header -------
+
+    .logo span {
+	display: none;
+}
+
+    .tutorialtitle {
+	font-size: 16px;
+	color: #000;
+	text-align:left;
+	margin: 14px 14px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-style:normal;
+}
+
+.logolink {
+	background:transparent;
+	width:700px;
+	height:64px;
+	position:fixed;
+	top:0px;
+	z-index:4;
+	left:300px;
+}
+
+.banner {
+	width:1020px;
+	height:80px;
+	margin: 0 auto;
+	top: 0px;
+	text-align:center;
+	border: 0px;
+}
+
+a, img {
+    border:none;
+}
+
+------ Table of Contents -------
+
+.reveal-modal-bg { 
+		position: fixed; 
+		height: 100%;
+		width: 100%;
+		background: #000;
+		background: rgba(0,0,0,.8);
+		z-index: 100;
+		display: none;
+		top: 0;
+		left: 0; 
+		}
+		
+	.reveal-modal {
+		visibility: hidden;
+		top: -20px; 
+		left: 50%;
+		margin-left: -400px;
+		width: 300px;
+		background-color:#fff;
+		z-index: 101;
+		padding: 30px 10px 10px;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+		border-radius: 5px;
+		-moz-box-shadow: 0 0 10px rgba(0,0,0,.4);
+		-webkit-box-shadow: 0 0 10px rgba(0,0,0,.4);
+		-box-shadow: 0 0 10px rgba(0,0,0,.4);
+		color:#00010b;
+		}		
+	.reveal-modal.small 		{ width: 200px; margin-left: -140px;}
+	.reveal-modal.medium 		{ width: 400px; margin-left: -240px;}
+	.reveal-modal.large 		{ width: 600px; margin-left: -340px;}
+	.reveal-modal.xlarge 		{ width: 800px; margin-left: -440px;}
+	
+	.reveal-modal .close-reveal-modal {
+	font-size: 22px;
+	line-height: .5;
+	position: absolute;
+	top: 28px;
+	right: 11px;
+	color: #aaa;
+	font-weight: bold;
+	cursor: pointer;
+		} 
+
+    .ui-modal-a {
+	border: 0px solid #999999;
+}
+
+    .ui-modal-a .ui-modal-a a {
+	padding-top: 4px;
+	padding-bottom: 4px;
+	font-weight:bold;
+	text-decoration:none;
+	padding-left: 20px;
+}
+
+    .ui-modal-a .ui-modal-a div {
+	margin-top: 10px;
+	text-align: left;
+}
+
+.active {
+	background:#69F;
+	display: block;
+	color: #FFF;	/*background-image:url(../images/activearrow.png);*/
+}
+
+.inactive {
+	display: block;
+	background-color: #dddddd;
+	color: #036;
+}
+
+.inactiveindent {
+	display: block;
+	background-color: #dddddd;
+	color: #036;
+}
+
+.activeindent {
+	background: #69f;
+	display: block;
+	color: #FFF;	/*background-image:url(../images/activearrow.png);*/
+}
+
+.inactiveindent span{
+margin-left:15px;
+margin-top:0px;
+	display: block;
+}
+
+span.inactiveindent ul li{
+margin:0px;
+line-height:16px;
+}
+
+span.activeindent ul li{
+margin:0px;
+line-height:16px;
+}
+
+.activeindent span{
+margin-left:15px;
+	display: block;
+}
+
+
+.active a {
+	font-weight:bold;
+	color:#FFF;
+	font-size:14px;
+}
+
+
+.toc {
+	background:#aaa;
+	height:395px;
+	position:relative;
+	width:260px;
+		margin-left:2px;
+		margin-top:2px;
+}
+
+#toc_content {
+	height:394px;
+	overflow:auto;
+	position:absolute;
+	top:5px;
+	width:260px;
+	background:#fff;
+}
+#toc_content div {
+	margin-top: 12px;
+	margin-left: 2px;
+	margin-right: 1px;
+}
+.tocfirst {
+margin-top:0px;	
+}
