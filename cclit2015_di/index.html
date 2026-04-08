@@ -2,122 +2,154 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=1600">
   <title>Pearson Common Core Literature Online: Differentiating Instruction</title>
-  <link rel="stylesheet" href="css/style.css" />
   <style>
-  body {
-    margin: 0;
-    background: #efefef;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #222;
-  }
+    body {
+      margin: 0;
+      background: #efefef;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #222;
+    }
 
-  .page-wrap {
-    width: 1500px;
-    margin: 15px auto 40px;
-    padding: 0;
-  }
+    .page-wrap {
+      width: 1500px;
+      margin: 16px auto 40px;
+      padding: 0;
+    }
 
-  .top-logos {
-    display: flex;
-    align-items: flex-start;
-    gap: 18px;
-    margin: 0 0 12px 22px;
-  }
+    .top-logos {
+      display: flex;
+      align-items: flex-start;
+      gap: 18px;
+      margin: 0 0 12px 18px;
+    }
 
-  .top-logos a:first-child img {
-    width: 355px;
-    height: auto;
-    display: block;
-  }
+    .top-logos a {
+      display: block;
+      text-decoration: none;
+    }
 
-  .top-logos a:last-child img {
-    width: 825px;
-    height: auto;
-    display: block;
-  }
+    .logo-left {
+      width: 355px;
+      height: 91px;
+      background: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
 
-  .shell {
-    background: #d9d9d9;
-    border-radius: 18px;
-    padding: 22px 22px 18px;
-  }
+    .logo-left img {
+      width: 305px;
+      height: auto;
+      display: block;
+    }
 
-  .tutorial-title {
-    font-size: 27px;
-    font-weight: 700;
-    margin: 2px 0 18px;
-    color: #222;
-  }
+    .logo-right {
+      width: 825px;
+      height: 91px;
+      overflow: hidden;
+      display: flex;
+      align-items: flex-start;
+    }
 
-  .layout {
-    display: grid;
-    grid-template-columns: 395px 1fr;
-    gap: 18px;
-    align-items: start;
-  }
+    .logo-right img {
+      width: 825px;
+      height: auto;
+      display: block;
+    }
 
-  .toc {
-    background: #e5e5e5;
-    border: 4px solid #b8b8b8;
-    padding: 10px;
-    height: 560px;
-    overflow-y: auto;
-    box-sizing: border-box;
-  }
+    .shell {
+      background: #d9d9d9;
+      border-radius: 18px;
+      padding: 24px 22px 22px;
+      box-sizing: border-box;
+    }
 
-  .toc a {
-    display: block;
-    padding: 16px 16px;
-    margin: 0 0 10px 0;
-    text-decoration: none;
-    font-size: 25px;
-    line-height: 1.08;
-    font-weight: 700;
-    color: #003c7a;
-    background: #dcdcdc;
-    box-sizing: border-box;
-  }
+    .tutorial-title {
+      font-size: 26px;
+      line-height: 1.15;
+      font-weight: 700;
+      color: #222;
+      margin: 0 0 22px 0;
+    }
 
-  .toc a.active {
-    background: #6f95ee;
-    color: #fff;
-  }
+    .layout {
+      display: grid;
+      grid-template-columns: 398px 1fr;
+      gap: 22px;
+      align-items: start;
+    }
 
-  .viewer {
-    width: 100%;
-  }
+    .toc {
+      background: #e7e7e7;
+      border: 4px solid #b9b9b9;
+      padding: 10px;
+      height: 580px;
+      box-sizing: border-box;
+      overflow-y: auto;
+      overflow-x: hidden;
+    }
 
-  .slide {
-    display: none;
-  }
+    .toc-link {
+      display: block;
+      background: #dddddd;
+      color: #003d7a;
+      text-decoration: none;
+      font-size: 23px;
+      line-height: 1.08;
+      font-weight: 700;
+      padding: 16px 18px;
+      margin: 0 0 12px 0;
+      box-sizing: border-box;
+    }
 
-  .slide.active {
-    display: block;
-  }
+    .toc-link.active {
+      background: #6f95ee;
+      color: #fff;
+    }
 
-  .video-frame {
-    width: 100%;
-    background: transparent;
-  }
+    .viewer {
+      width: 100%;
+    }
 
-  video {
-    display: block;
-    width: 1028px;
-    height: 578px;
-    background: #000;
-    object-fit: cover;
-  }
-</style>
+    .slide {
+      display: none;
+    }
+
+    .slide.active {
+      display: block;
+    }
+
+    .video-frame {
+      width: 100%;
+      background: transparent;
+    }
+
+    .video-inner {
+      width: 1028px;
+      height: 578px;
+      background: #000;
+      overflow: hidden;
+    }
+
+    .video-inner video {
+      width: 1028px;
+      height: 578px;
+      display: block;
+      background: #000;
+      object-fit: fill;
+    }
+  </style>
 </head>
 <body>
   <div class="page-wrap">
     <div class="top-logos">
-      <a href="index.html">
+      <a href="index.html" class="logo-left">
         <img src="images/mpt_logo.png" alt="my Pearson Training">
       </a>
-      <a href="index.html">
+      <a href="index.html" class="logo-right">
         <img src="images/logo.gif" alt="Pearson Common Core Literature">
       </a>
     </div>
@@ -141,64 +173,71 @@
         <div class="viewer">
           <div class="slide active" id="slide1">
             <div class="video-frame">
-              <video controls preload="metadata" poster="images/poster1.png">
-                <source src="videos/01_cclit2015_DI.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
+              <div class="video-inner">
+                <video controls preload="metadata" poster="images/poster1.png">
+                  <source src="videos/01_cclit2015_DI.mp4" type="video/mp4">
+                </video>
+              </div>
             </div>
           </div>
 
           <div class="slide" id="slide2">
             <div class="video-frame">
-              <video controls preload="metadata" poster="images/poster2.png">
-                <source src="videos/02_cclit2015_DI.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
+              <div class="video-inner">
+                <video controls preload="metadata" poster="images/poster2.png">
+                  <source src="videos/02_cclit2015_DI.mp4" type="video/mp4">
+                </video>
+              </div>
             </div>
           </div>
 
           <div class="slide" id="slide3">
             <div class="video-frame">
-              <video controls preload="metadata" poster="images/poster3.png">
-                <source src="videos/03_cclit2015_DI.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
+              <div class="video-inner">
+                <video controls preload="metadata" poster="images/poster3.png">
+                  <source src="videos/03_cclit2015_DI.mp4" type="video/mp4">
+                </video>
+              </div>
             </div>
           </div>
 
           <div class="slide" id="slide4">
             <div class="video-frame">
-              <video controls preload="metadata" poster="images/poster4.png">
-                <source src="videos/04_cclit2015_DI.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
+              <div class="video-inner">
+                <video controls preload="metadata" poster="images/poster4.png">
+                  <source src="videos/04_cclit2015_DI.mp4" type="video/mp4">
+                </video>
+              </div>
             </div>
           </div>
 
           <div class="slide" id="slide5">
             <div class="video-frame">
-              <video controls preload="metadata" poster="images/poster5.png">
-                <source src="videos/05_cclit2015_DI.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
+              <div class="video-inner">
+                <video controls preload="metadata" poster="images/poster5.png">
+                  <source src="videos/05_cclit2015_DI.mp4" type="video/mp4">
+                </video>
+              </div>
             </div>
           </div>
 
           <div class="slide" id="slide6">
             <div class="video-frame">
-              <video controls preload="metadata" poster="images/poster6.png">
-                <source src="videos/06_cclit2015_DI.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
+              <div class="video-inner">
+                <video controls preload="metadata" poster="images/poster6.png">
+                  <source src="videos/06_cclit2015_DI.mp4" type="video/mp4">
+                </video>
+              </div>
             </div>
           </div>
 
           <div class="slide" id="slide7">
             <div class="video-frame">
-              <video controls preload="metadata" poster="images/poster7.png">
-                <source src="videos/07_cclit2015_DI.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
+              <div class="video-inner">
+                <video controls preload="metadata" poster="images/poster7.png">
+                  <source src="videos/07_cclit2015_DI.mp4" type="video/mp4">
+                </video>
+              </div>
             </div>
           </div>
         </div>
