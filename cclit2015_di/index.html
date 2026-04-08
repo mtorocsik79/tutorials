@@ -1,603 +1,258 @@
-<!DOCTYPE html> 
-<html> 
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Pearson Common Core Literature Online: Differentiating Instruction</title>
-<link rel="stylesheet" href="css/style.css" />
-<script src="js/jquery-1.6.4.min.js"></script>
-<script src="js/jquery.mobile-1.0rc1.min.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pearson Common Core Literature Online: Differentiating Instruction</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    body {
+      margin: 0;
+      background: #efefef;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #222;
+    }
 
-<script type="text/javascript">
+    .page-wrap {
+      max-width: 1500px;
+      margin: 20px auto 40px;
+      padding: 0 20px;
+    }
 
+    .top-logos {
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      gap: 20px;
+      margin-bottom: -10px;
+      padding-left: 20px;
+    }
 
+    .top-logos img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
 
-  var _gaq = _gaq || [];
+    .shell {
+      background: #d9d9d9;
+      border-radius: 18px;
+      padding: 18px;
+    }
 
-  _gaq.push(['_setAccount', 'UA-16383351-2']);
+    .tutorial-title {
+      font-size: 28px;
+      font-weight: bold;
+      margin: 8px 0 18px;
+    }
 
-  _gaq.push(['_trackPageview']);
+    .layout {
+      display: grid;
+      grid-template-columns: 380px 1fr;
+      gap: 18px;
+      align-items: start;
+    }
 
+    .toc {
+      background: #e8e8e8;
+      border: 4px solid #b8b8b8;
+      padding: 8px;
+    }
 
+    .toc a {
+      display: block;
+      padding: 18px 16px;
+      margin-bottom: 10px;
+      text-decoration: none;
+      font-size: 20px;
+      line-height: 1.15;
+      font-weight: bold;
+      color: #003a78;
+      background: #dcdcdc;
+    }
 
-  (function() {
+    .toc a.active {
+      background: #6d96f2;
+      color: #fff;
+    }
 
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    .viewer {
+      background: transparent;
+    }
 
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    .slide {
+      display: none;
+    }
 
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    .slide.active {
+      display: block;
+    }
 
-  })();
+    .video-frame {
+      background: #fff;
+      padding: 0;
+    }
 
+    video {
+      width: 100%;
+      max-width: 100%;
+      display: block;
+      background: #000;
+      aspect-ratio: 16 / 9;
+    }
 
+    @media (max-width: 980px) {
+      .layout {
+        grid-template-columns: 1fr;
+      }
 
-</script>
+      .tutorial-title {
+        font-size: 24px;
+      }
 
-
-
-
-
-<script type="text/javascript" src="/javascript/webtrends.js"></script>
-
-<script type="text/javascript">
-
-//<![CDATA[
-
-var _tag=new WebTrends();
-
-_tag.dcsGetId();
-
-//]]>>
-
-
-
-</script>
-
-
-
-<script type="text/javascript">
-
-//<![CDATA[
-
-// Add custom parameters here.
-
-//_tag.DCSext.param_name=param_value;
-
-_tag.dcsCollect();
-
-//]]>>
-
-</script>
-
-
-
-<noscript>
-
-<div><img alt="DCSIMG" id="DCSIMG" width="1" height="1" src="http://statse.webtrendslive.com/dcsnophqp10000gg7x8toxrf5_7h7f/njs.gif?dcsuri=/nojavascript&amp;WT.js=No&amp;WT.tv=8.6.2"/></div>
-
-</noscript>
-
-   </head>
+      .toc a {
+        font-size: 18px;
+      }
+    }
+  </style>
+</head>
 <body>
+  <div class="page-wrap">
+    <div class="top-logos">
+      <a href="index.html">
+        <img src="images/mpt_logo.png" alt="my Pearson Training">
+      </a>
+      <a href="index.html">
+        <img src="images/logo.gif" alt="Pearson Common Core Literature">
+      </a>
+    </div>
 
-<div data-role="page" id="chp1" class="videopage" data-title="Pearson Common Core Literature Online: Differentiating Instruction" rel="external">
-<div data-role="header" data-position="inline" class="banner"><a href="index.html" rel="external"><img src="images/mpt_logo.png" /></a><a href="/" rel="external"><img src="images/logo.gif" /></a></div>
-<div align="center">
-<div class="ui-grid-a">
-<div class="tutorialtitle">Pearson Common Core Literature Online: Differentiating Instruction</div>
-<div class="ui-block-a">
-<div class="toc">
-<div id="toc_content">
-    <div class="tocfirst"><a href="index.html" rel="external" class="active">Introduction</a></div>
-    <div><a href="#chp2" rel="external" class="inactive">Tools for Differentiation: Your Teacher's Edition</a></div>
-    <div><a href="#chp3" rel="external" class="inactive">Tools for Differentiation: Selection Worksheets</a></div>
-    <div><a href="#chp4" rel="external" class="inactive">Tools for Differentiation: Reader's Notebook Worksheets</a></div>
-	<div><a href="#chp5" rel="external" class="inactive">Tools for Differentiation: Reality Central</a></div>
-    <div><a href="#chp6" rel="external" class="inactive">Tools for Differentiation: Grammar Tutorials</a></div>
-    <div><a href="#chp7" rel="external" class="inactive">Professional Development Center</a></div>  
-     
- 
-</div><!-- ends toc_content -->
-</div><!-- ends toc -->
-</div><!-- ends ui-block-a -->
+    <div class="shell">
+      <div class="tutorial-title">
+        Pearson Common Core Literature Online: Differentiating Instruction
+      </div>
 
-<div class="ui-block-b"><div id="slide1"></div>
-		<script type="text/javascript" src="js/jwplayer.js"></script>
-	<script type="text/javascript">
-		jwplayer("slide1").setup({
-			skin:"player/glow_ole.zip",
-			stretching: "fill",
-			flashplayer: "player/player.swf",
-			image: "images/poster1.png",			
-			width: 720,
-			height: 405,
-			levels: [
-            {file: "videos/01_cclit2015_DI.mp4"},
-             ],
-			 events:{
-       		onPlay: function() {
-     	   jwplayer('slide2').stop();
-		   jwplayer('slide3').stop();
-		   jwplayer('slide4').stop();
-		   jwplayer('slide5').stop();
-		   jwplayer('slide6').stop();
-		   jwplayer('slide7').stop();		    
-		    }
-		}
+      <div class="layout">
+        <nav class="toc" aria-label="Tutorial sections">
+          <a href="#" class="toc-link active" data-slide="slide1">Introduction</a>
+          <a href="#" class="toc-link" data-slide="slide2">Tools for Differentiation: Your Teacher's Edition</a>
+          <a href="#" class="toc-link" data-slide="slide3">Tools for Differentiation: Selection Worksheets</a>
+          <a href="#" class="toc-link" data-slide="slide4">Tools for Differentiation: Reader's Notebook Worksheets</a>
+          <a href="#" class="toc-link" data-slide="slide5">Tools for Differentiation: Reality Central</a>
+          <a href="#" class="toc-link" data-slide="slide6">Tools for Differentiation: Grammar Tutorials</a>
+          <a href="#" class="toc-link" data-slide="slide7">Professional Development Center</a>
+        </nav>
 
-		});
-		jwplayer("slide1").onComplete(function() {
-		window.location = "#chp2";
-		}); 
-		
+        <div class="viewer">
+          <div class="slide active" id="slide1">
+            <div class="video-frame">
+              <video controls preload="metadata" poster="images/poster1.png">
+                <source src="videos/01_cclit2015_DI.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
 
-	</script>
-</div> <!-- ui-block-b-->    
-</div> <!-- grid-a -->
-</div> <!-- align center -->
-</div> <!-- data-role-page-->
+          <div class="slide" id="slide2">
+            <div class="video-frame">
+              <video controls preload="metadata" poster="images/poster2.png">
+                <source src="videos/02_cclit2015_DI.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
 
+          <div class="slide" id="slide3">
+            <div class="video-frame">
+              <video controls preload="metadata" poster="images/poster3.png">
+                <source src="videos/03_cclit2015_DI.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
 
-<div data-role="page" id="chp2" class="videopage" data-title="Pearson Common Core Literature Online: Differentiating Instruction" rel="external">
-<div class="banner" data-role="header" data-position="inline"><a href="index.html" rel="external"><img src="images/mpt_logo.png" /></a><a href="/" rel="external"><img src="images/logo.gif" /></a></div>
-<div align="center">
-<div class="ui-grid-a"><div class="tutorialtitle">Pearson Common Core Literature Online: Differentiating Instruction</div>
-<div class="ui-block-a">
-<div class="toc">
-<div id="toc_content">
-    <div class="tocfirst"><a href="index.html" rel="external" class="inactive">Introduction</a></div>
-    <div><a href="#chp2" rel="external" class="active">Tools for Differentiation: Your Teacher's Edition</a></div>
-    <div><a href="#chp3" rel="external" class="inactive">Tools for Differentiation: Selection Worksheets</a></div>
-    <div><a href="#chp4" rel="external" class="inactive">Tools for Differentiation: Reader's Notebook Worksheets</a></div>
-	<div><a href="#chp5" rel="external" class="inactive">Tools for Differentiation: Reality Central</a></div>
-    <div><a href="#chp6" rel="external" class="inactive">Tools for Differentiation: Grammar Tutorials</a></div>
-    <div><a href="#chp7" rel="external" class="inactive">Professional Development Center</a></div>  
-     
- 
-</div><!-- ends toc_content -->
-</div><!-- ends toc -->
-</div><!-- ends ui-block-a -->
+          <div class="slide" id="slide4">
+            <div class="video-frame">
+              <video controls preload="metadata" poster="images/poster4.png">
+                <source src="videos/04_cclit2015_DI.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
 
-<div class="ui-block-b"><div id="slide2"></div>
-		<script type="text/javascript" src="js/jwplayer.js"></script>
-	<script type="text/javascript">
-		jwplayer("slide2").setup({
-			skin:"player/glow_ole.zip",
-			stretching: "fill",
-			flashplayer: "player/player.swf",
-			image: "images/poster2.png",			
-			width: 720,
-			height: 405,
-			levels: [
-            {file: "videos/02_cclit2015_DI.mp4"},
-             ],
-			 events:{
-       		onPlay: function() {
-     	   jwplayer('slide1').stop();
-		   jwplayer('slide3').stop();
-		   jwplayer('slide4').stop();
-		   jwplayer('slide5').stop();
-		   jwplayer('slide6').stop();
-		   jwplayer('slide7').stop();		   
-		    
-		    }
-		}
+          <div class="slide" id="slide5">
+            <div class="video-frame">
+              <video controls preload="metadata" poster="images/poster5.png">
+                <source src="videos/05_cclit2015_DI.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
 
-		});
-		jwplayer("slide2").onComplete(function() {
-		window.location = "#chp3";
-		}); 
-		
-				jwplayer("slide2").onReady(function(event) {
-		setTimeout(function(){autoplay2()},1200);
-		});
+          <div class="slide" id="slide6">
+            <div class="video-frame">
+              <video controls preload="metadata" poster="images/poster6.png">
+                <source src="videos/06_cclit2015_DI.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
 
-		function autoplay2(){
-		jwplayer("slide2").play();
-		};
-	</script>
-</div> <!-- ui-block-b-->    
-</div> <!-- grid-a -->
-</div> <!-- align center -->
-</div> <!-- data-role-page-->
+          <div class="slide" id="slide7">
+            <div class="video-frame">
+              <video controls preload="metadata" poster="images/poster7.png">
+                <source src="videos/07_cclit2015_DI.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
+  <script>
+    const links = Array.from(document.querySelectorAll('.toc-link'));
+    const slides = Array.from(document.querySelectorAll('.slide'));
+    const videos = Array.from(document.querySelectorAll('video'));
 
-<div data-role="page" id="chp3" class="videopage" data-title="Pearson Common Core Literature Online: Differentiating Instruction" rel="external">
-<div class="banner" data-role="header" data-position="inline"><a href="index.html" rel="external"><img src="images/mpt_logo.png" /></a><a href="/" rel="external"><img src="images/logo.gif" /></a></div>
-<div align="center">
-<div class="ui-grid-a"><div class="tutorialtitle">Pearson Common Core Literature Online: Differentiating Instruction</div>
-<div class="ui-block-a">
-<div class="toc">
-<div id="toc_content">
+    function showSlide(slideId) {
+      slides.forEach(slide => {
+        slide.classList.toggle('active', slide.id === slideId);
+      });
 
-    <div class="tocfirst"><a href="index.html" rel="external" class="inactive">Introduction</a></div>
-    <div><a href="#chp2" rel="external" class="inactive">Tools for Differentiation: Your Teacher's Edition</a></div>
-    <div><a href="#chp3" rel="external" class="active">Tools for Differentiation: Selection Worksheets</a></div>
-    <div><a href="#chp4" rel="external" class="inactive">Tools for Differentiation: Reader's Notebook Worksheets</a></div>
-	<div><a href="#chp5" rel="external" class="inactive">Tools for Differentiation: Reality Central</a></div>
-    <div><a href="#chp6" rel="external" class="inactive">Tools for Differentiation: Grammar Tutorials</a></div>
-    <div><a href="#chp7" rel="external" class="inactive">Professional Development Center</a></div>  
-     
- 
+      links.forEach(link => {
+        link.classList.toggle('active', link.dataset.slide === slideId);
+      });
 
-</div><!-- ends toc_content -->
-</div><!-- ends toc -->
-</div><!-- ends ui-block-a -->
+      videos.forEach(video => {
+        const parentSlide = video.closest('.slide');
+        if (parentSlide.id !== slideId) {
+          video.pause();
+          video.currentTime = 0;
+        }
+      });
+    }
 
-<div class="ui-block-b"><div id="slide3"></div>
-		<script type="text/javascript" src="js/jwplayer.js"></script>
-	<script type="text/javascript">
-		jwplayer("slide3").setup({
-			skin:"player/glow_ole.zip",
-			stretching: "fill",
-			flashplayer: "player/player.swf",
-			image: "images/poster3.png",			
-			width: 720,
-			height: 405,
-			levels: [
-            {file: "videos/03_cclit2015_DI.mp4"},
-             ],
-			 events:{
-       		onPlay: function() {
-     	   jwplayer('slide1').stop();
-		   jwplayer('slide2').stop();
-		   jwplayer('slide4').stop();
-		   jwplayer('slide5').stop();
-		   jwplayer('slide6').stop();
-		   jwplayer('slide7').stop();		   
-		    
-		    }
-		}
-
-		});
-		jwplayer("slide3").onComplete(function() {
-		window.location = "#chp4";
-		}); 
-		
-				jwplayer("slide3").onReady(function(event) {
-		setTimeout(function(){autoplay3()},1200);
-		});
-
-		function autoplay3(){
-		jwplayer("slide3").play();
-		};
-	</script>
-</div> <!-- ui-block-b-->    
-</div> <!-- grid-a -->
-</div> <!-- align center -->
-</div> <!-- data-role-page-->
-
-
-<div data-role="page" id="chp4" class="videopage" data-title="Pearson Common Core Literature Online: Differentiating Instruction" rel="external">
-<div class="banner" data-role="header" data-position="inline"><a href="index.html" rel="external"><img src="images/mpt_logo.png" /></a><a href="/" rel="external"><img src="images/logo.gif" /></a></div>
-<div align="center">
-<div class="ui-grid-a"><div class="tutorialtitle">Pearson Common Core Literature Online: Differentiating Instruction</div>
-<div class="ui-block-a">
-<div class="toc">
-<div id="toc_content">
-
-    <div class="tocfirst"><a href="index.html" rel="external" class="inactive">Introduction</a></div>
-    <div><a href="#chp2" rel="external" class="inactive">Tools for Differentiation: Your Teacher's Edition</a></div>
-    <div><a href="#chp3" rel="external" class="inactive">Tools for Differentiation: Selection Worksheets</a></div>
-    <div><a href="#chp4" rel="external" class="active">Tools for Differentiation: Reader's Notebook Worksheets</a></div>
-	<div><a href="#chp5" rel="external" class="inactive">Tools for Differentiation: Reality Central</a></div>
-    <div><a href="#chp6" rel="external" class="inactive">Tools for Differentiation: Grammar Tutorials</a></div>
-    <div><a href="#chp7" rel="external" class="inactive">Professional Development Center</a></div>   
-     
- 
-
-</div><!-- ends toc_content -->
-</div><!-- ends toc -->
-</div><!-- ends ui-block-a -->
-
-<div class="ui-block-b"><div id="slide4"></div>
-		<script type="text/javascript" src="js/jwplayer.js"></script>
-	<script type="text/javascript">
-		jwplayer("slide4").setup({
-			skin:"player/glow_ole.zip",
-			stretching: "fill",
-			flashplayer: "player/player.swf",
-			image: "images/poster4.png",			
-			width: 720,
-			height: 405,
-			levels: [
-            {file: "videos/04_cclit2015_DI.mp4"},
-             ],
-			 events:{
-       		onPlay: function() {
-     	   jwplayer('slide1').stop();
-		   jwplayer('slide2').stop();
-		   jwplayer('slide3').stop();
-		   jwplayer('slide5').stop();
-		   jwplayer('slide6').stop();
-		   jwplayer('slide7').stop();
-		    
-		    }
-		}
-
-		});
-		jwplayer("slide4").onComplete(function() {
-		window.location = "#chp5";
-		}); 
-		
-				jwplayer("slide4").onReady(function(event) {
-		setTimeout(function(){autoplay4()},1200);
-		});
-
-		function autoplay4(){
-		jwplayer("slide4").play();
-		};
-	</script>
-</div> <!-- ui-block-b-->    
-</div> <!-- grid-a -->
-</div> <!-- align center -->
-</div> <!-- data-role-page-->
-
-<div data-role="page" id="chp5" class="videopage" data-title="Pearson Common Core Literature Online: Differentiating Instruction" rel="external">
-<div class="banner" data-role="header" data-position="inline"><a href="index.html" rel="external"><img src="images/mpt_logo.png" /></a><a href="/" rel="external"><img src="images/logo.gif" /></a></div>
-<div align="center">
-<div class="ui-grid-a"><div class="tutorialtitle">Pearson Common Core Literature Online: Differentiating Instruction</div>
-<div class="ui-block-a">
-<div class="toc">
-<div id="toc_content">
-
-    <div class="tocfirst"><a href="index.html" rel="external" class="inactive">Introduction</a></div>
-    <div><a href="#chp2" rel="external" class="inactive">Tools for Differentiation: Your Teacher's Edition</a></div>
-    <div><a href="#chp3" rel="external" class="inactive">Tools for Differentiation: Selection Worksheets</a></div>
-    <div><a href="#chp4" rel="external" class="inactive">Tools for Differentiation: Reader's Notebook Worksheets</a></div>
-	<div><a href="#chp5" rel="external" class="active">Tools for Differentiation: Reality Central</a></div>
-    <div><a href="#chp6" rel="external" class="inactive">Tools for Differentiation: Grammar Tutorials</a></div>
-    <div><a href="#chp7" rel="external" class="inactive">Professional Development Center</a></div>  
-     
- 
-
-</div><!-- ends toc_content -->
-</div><!-- ends toc -->
-</div><!-- ends ui-block-a -->
-
-<div class="ui-block-b"><div id="slide5"></div>
-		<script type="text/javascript" src="js/jwplayer.js"></script>
-	<script type="text/javascript">
-		jwplayer("slide5").setup({
-			skin:"player/glow_ole.zip",
-			stretching: "fill",
-			flashplayer: "player/player.swf",
-			image: "images/poster5.png",			
-			width: 720,
-			height: 405,
-			levels: [
-            {file: "videos/05_cclit2015_DI.mp4"},
-             ],
-			 events:{
-       		onPlay: function() {
-     	   jwplayer('slide1').stop();
-		   jwplayer('slide2').stop();
-		   jwplayer('slide3').stop();
-		   jwplayer('slide4').stop();
-		   jwplayer('slide6').stop();
-		   jwplayer('slide7').stop();
-		    
-		    }
-		}
-
-		});
-		jwplayer("slide5").onComplete(function() {
-		window.location = "#chp6";
-		}); 
-		
-						jwplayer("slide5").onReady(function(event) {
-		setTimeout(function(){autoplay5()},1200);
-		});
-
-		function autoplay5(){
-		jwplayer("slide5").play();
-		};
-	</script>
-</div> <!-- ui-block-b-->    
-</div> <!-- grid-a -->
-</div> <!-- align center -->
-</div> <!-- data-role-page-->
-
-
-<div data-role="page" id="chp6" class="videopage" data-title="Pearson Common Core Literature Online: Differentiating Instruction" rel="external">
-<div class="banner" data-role="header" data-position="inline"><a href="index.html" rel="external"><img src="images/mpt_logo.png" /></a><a href="/" rel="external"><img src="images/logo.gif" /></a></div>
-<div align="center">
-<div class="ui-grid-a"><div class="tutorialtitle">Pearson Common Core Literature Online: Differentiating Instruction</div>
-<div class="ui-block-a">
-<div class="toc">
-<div id="toc_content">
-
-    <div class="tocfirst"><a href="index.html" rel="external" class="inactive">Introduction</a></div>
-    <div><a href="#chp2" rel="external" class="inactive">Tools for Differentiation: Your Teacher's Edition</a></div>
-    <div><a href="#chp3" rel="external" class="inactive">Tools for Differentiation: Selection Worksheets</a></div>
-    <div><a href="#chp4" rel="external" class="inactive">Tools for Differentiation: Reader's Notebook Worksheets</a></div>
-	<div><a href="#chp5" rel="external" class="inactive">Tools for Differentiation: Reality Central</a></div>
-    <div><a href="#chp6" rel="external" class="active">Tools for Differentiation: Grammar Tutorials</a></div>
-    <div><a href="#chp7" rel="external" class="inactive">Professional Development Center</a></div> 
-     
- 
-
-</div><!-- ends toc_content -->
-</div><!-- ends toc -->
-</div><!-- ends ui-block-a -->
-
-<div class="ui-block-b"><div id="slide6"></div>
-		<script type="text/javascript" src="js/jwplayer.js"></script>
-	<script type="text/javascript">
-		jwplayer("slide6").setup({
-			skin:"player/glow_ole.zip",
-			stretching: "fill",
-			flashplayer: "player/player.swf",
-			image: "images/poster6.png",			
-			width: 720,
-			height: 405,
-			levels: [
-            {file: "videos/06_cclit2015_DI.mp4"},
-             ],
-			 events:{
-       		onPlay: function() {
-     	   jwplayer('slide1').stop();
-		   jwplayer('slide2').stop();
-		   jwplayer('slide3').stop();
-		   jwplayer('slide4').stop();
-		   jwplayer('slide5').stop();
-		   jwplayer('slide7').stop();
-		    
-		    }
-		}
-
-		});
-		jwplayer("slide6").onComplete(function() {
-		window.location = "#chp7";
-		}); 
-		
-						jwplayer("slide6").onReady(function(event) {
-		setTimeout(function(){autoplay6()},1200);
-		});
-
-		function autoplay6(){
-		jwplayer("slide6").play();
-		};
-	</script>
-</div> <!-- ui-block-b-->    
-</div> <!-- grid-a -->
-</div> <!-- align center -->
-</div> <!-- data-role-page-->
-
-
-<div data-role="page" id="chp7" class="videopage" data-title="Pearson Common Core Literature Online: Differentiating Instruction" rel="external">
-<div class="banner" data-role="header" data-position="inline"><a href="index.html" rel="external"><img src="images/mpt_logo.png" /></a><a href="/" rel="external"><img src="images/logo.gif" /></a></div>
-<div align="center">
-<div class="ui-grid-a"><div class="tutorialtitle">Pearson Common Core Literature Online: Differentiating Instruction</div>
-<div class="ui-block-a">
-<div class="toc">
-<div id="toc_content">
-
-    <div class="tocfirst"><a href="index.html" rel="external" class="inactive">Introduction</a></div>
-    <div><a href="#chp2" rel="external" class="inactive">Tools for Differentiation: Your Teacher's Edition</a></div>
-    <div><a href="#chp3" rel="external" class="inactive">Tools for Differentiation: Selection Worksheets</a></div>
-    <div><a href="#chp4" rel="external" class="inactive">Tools for Differentiation: Reader's Notebook Worksheets</a></div>
-	<div><a href="#chp5" rel="external" class="inactive">Tools for Differentiation: Reality Central</a></div>
-    <div><a href="#chp6" rel="external" class="inactive">Tools for Differentiation: Grammar Tutorials</a></div>
-    <div><a href="#chp7" rel="external" class="active">Professional Development Center</a></div> 
-     
- 
-
-</div><!-- ends toc_content -->
-</div><!-- ends toc -->
-</div><!-- ends ui-block-a -->
-
-<div class="ui-block-b"><div id="slide7"></div>
-		<script type="text/javascript" src="js/jwplayer.js"></script>
-	<script type="text/javascript">
-		jwplayer("slide7").setup({
-			skin:"player/glow_ole.zip",
-			stretching: "fill",
-			flashplayer: "player/player.swf",
-			image: "images/poster7.png",			
-			width: 720,
-			height: 405,
-			levels: [
-            {file: "videos/07_cclit2015_DI.mp4"},
-             ],
-			 events:{
-       		onPlay: function() {
-     	   jwplayer('slide1').stop();
-		   jwplayer('slide2').stop();
-		   jwplayer('slide3').stop();
-		   jwplayer('slide4').stop();
-		   jwplayer('slide5').stop();
-		   jwplayer('slide6').stop();
-		    
-		    }
-		}
-
-		});
-		jwplayer("slide7").onComplete(function() {
-		window.location = "index.html";
-		}); 
-		
-						jwplayer("slide7").onReady(function(event) {
-		setTimeout(function(){autoplay7()},1200);
-		});
-
-		function autoplay7(){
-		jwplayer("slide7").play();
-		};
-	</script>
-</div> <!-- ui-block-b-->    
-</div> <!-- grid-a -->
-</div> <!-- align center -->
-</div> <!-- data-role-page-->
-
-
-
-
-<script>
-$(document).ready(function(){
-    $("#chp2").bind( "pageshow", function(){
-    	$(this).find('[href="#chp2"]')[0].scrollIntoView(true);
-    });
-    $("#chp3").bind( "pageshow", function(){
-    	$(this).find('[href="#chp3"]')[0].scrollIntoView(true);
-    });
-    $("#chp4").bind( "pageshow", function(){
-    	$(this).find('[href="#chp4"]')[0].scrollIntoView(true);
-    });
-    $("#chp5").bind( "pageshow", function(){
-    	$(this).find('[href="#chp5"]')[0].scrollIntoView(true);
-    });
-    $("#chp6").bind( "pageshow", function(){
-    	$(this).find('[href="#chp6"]')[0].scrollIntoView(true);
-    });
-    $("#chp7").bind( "pageshow", function(){
-    	$(this).find('[href="#chp7"]')[0].scrollIntoView(true);
-    });
-    $("#chp8").bind( "pageshow", function(){
-    	$(this).find('[href="#chp8"]')[0].scrollIntoView(true);
-    });
-    $("#chp9").bind( "pageshow", function(){
-    	$(this).find('[href="#chp9"]')[0].scrollIntoView(true);
-    });
-    $("#chp10").bind( "pageshow", function(){
-    	$(this).find('[href="#chp10"]')[0].scrollIntoView(true);
-    });
-    $("#chp11").bind( "pageshow", function(){
-    	$(this).find('[href="#chp11"]')[0].scrollIntoView(true);
-    });
-    $("#chp12").bind( "pageshow", function(){
-    	$(this).find('[href="#chp12"]')[0].scrollIntoView(true);
-    });
-    $("#chp13").bind( "pageshow", function(){
-    	$(this).find('[href="#chp13"]')[0].scrollIntoView(true);
-    });
-    $("#chp14").bind( "pageshow", function(){
-    	$(this).find('[href="#chp14"]')[0].scrollIntoView(true);
-    });
-    $("#chp15").bind( "pageshow", function(){
-    	$(this).find('[href="#chp15"]')[0].scrollIntoView(true);
-    });
-    $("#chp16").bind( "pageshow", function(){
-    	$(this).find('[href="#chp16"]')[0].scrollIntoView(true);
-    });
-    $("#chp17").bind( "pageshow", function(){
-    	$(this).find('[href="#chp17"]')[0].scrollIntoView(true);
+    links.forEach(link => {
+      link.addEventListener('click', function (e) {
+        e.preventDefault();
+        showSlide(this.dataset.slide);
+      });
     });
 
-    $("#chp18").bind( "pageshow", function(){
-    	$(this).find('[href="#chp18"]')[0].scrollIntoView(true);
-    });
+    slides.forEach((slide, index) => {
+      const video = slide.querySelector('video');
 
-    $("#chp19").bind( "pageshow", function(){
-    	$(this).find('[href="#chp19"]')[0].scrollIntoView(true);
+      video.addEventListener('ended', () => {
+        const nextIndex = index + 1;
+        if (nextIndex < slides.length) {
+          showSlide(slides[nextIndex].id);
+        } else {
+          showSlide(slides[0].id);
+        }
+      });
     });
-    $("#chp20").bind( "pageshow", function(){
-    	$(this).find('[href="#chp20"]')[0].scrollIntoView(true);
-    });
-})
-</script>
-
-	<a href="index.html" target="_self"><div rel="external" class="logolink"></div></a>
+  </script>
 </body>
 </html>
